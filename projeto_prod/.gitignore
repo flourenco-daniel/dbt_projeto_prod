@@ -1,0 +1,6 @@
+.env
+target/
+dbt_packages/
+logs/
+env_example.env
+/home/daniel/dbt_projeto_prod/projeto_prod/projeto-dbt-479500-a3e67a36f72b.json

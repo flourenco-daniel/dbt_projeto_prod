@@ -1,0 +1,39 @@
+
+name: 'projeto_prod'
+version: '1.0.0'
+
+profile: 'projeto_prod'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  projeto_prod:
+
+    staging:
+    schema: stg
+    materialized: table
+    tags: ['staging']
+
+    intermediate:
+      schema: int
+      materialized: ephemeral
+      tags: ['intermediate']
+
+    mart:
+      schema: mart
+      materialized: table
+      tags: ['mart']
+
+seeds:
+  projeto_prod:
+    schema: raw
+    tags: ['seed']
