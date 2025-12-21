@@ -5,3 +5,4 @@ dbt_packages/
 logs/
 projeto_prod/projeto-dbt-479500-a3e67a36f72b.json
 projeto_prod/.user.yml
+requirements.txt
